@@ -1,104 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twitter. É o que está acontecendo / Twitter</title>
-  <!-- css -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- font -->
+  <title>Twitter. É o que está acontecendo</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-  <!-- icons -->
-  <script src="https://kit.fontawesome.com/fc0cde90b4.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div id="container">
-    <div id="banner">
-      <div class="img-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-      </div>
-    </div>
-    <main>
-      <div id="main-container">
-        <div id="main-content">
+    <article id="main-content">
+      <section id="banner">
+        <img src="./img/twitter_logo_whiteonimage.png" alt="">
+      </section>
+      <main>
+        <div id="main-box">
           <header>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-            <h2>Acontecendo agora</h2>
-            <p>Inscreva-se no Twiiter hoje mesmo.</p>
+            <i class="fab fa-twitter icon-header"></i>
           </header>
-          <form action="">
-            <div id="google-login" class="main-btn">
-              <div id="perfil-icon" class="line-icon"></div>
-              <div class="account-info">
-                <span class="account-name">Fazer login como Fernando</span>
-                <span class="account-email">
-                  fernandomk6@gmail.com
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
-                </span>
-              </div>
-              <div class="line-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
-              </div>
-            </div>
-            <div id="apple-login" class="main-btn">
-              <div class="line-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-              </div>
-              <div class="btn-text">
-                <a href="">Inscreva-se com a Aplle</a>
-              </div>
-            </div>
-            <div class="separator-container">
-              <span class="separator-line"></span>
-              <span class="separator-text">OU</span>
-              <span class="separator-line"></span>
-            </div>
-            <div class="main-btn">
-              <div class="btn-text">Inscreva-se com o número do celular</div>
-            </div>
-            <div class="extra-info">
-              <p>
-                Ao se inscrever, você concorda com os <a href="" class="extra-info-lk">Termos de Serviço</a>  
-                e a <a href="" class="extra-info-lk">Política de Privacidade</a>, incluindo o <a href="" class="extra-info-lk">
-                Uso de Cookies</a>.
-              </p>
-            </div>
-          </form>
-          <div id="create-acc-container">
-            <h2>Já tem uma conta?</h2>
-            <div class="main-btn">
-              <div class="btn-text">Entrar</div>
+          <h1>Acontecendo agora</h1>
+          <p id="main-discription">Inscreva-se no Twitter hoje mesmo.</p>
+          <div id="register">
+            <a href="" class="btn" id="google-btn">Fazer login como fernando</a>
+            <a href="" class="btn"id="apple-btn">Inscrever-se com a apple</a>
+            <p class="separator">
+              <span>ou</span>
+            </p>
+            <a href="" class="btn" id="register-w-phone">Inscrever-se com numero de celular</a>
+            <p id="terms">Ao se inscrever, você concorda com os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o  <a href="">Uso de Cookies</a>.</p>
+            <div id="login">
+              <h3>Ja tem uma conta?</h3>
+              <a href="" class="btn" id="enter-btn">Entrar</a>
             </div>
           </div>
         </div>
-      </div>    
-    </main>
+      </main>
+    </article>
+    <footer>
+      <nav>
+        <ul>
+          <li>Sobre</li>
+          <li>Central de Ajuda</li>
+          <li>Termos de Serviço</li>
+          <li>Política de Privacidade</li>
+          <li>Política de cookies</li>
+          <li>Acessibilidade</li>
+          <li>Informações de anúncios</li>
+          <li>Blog</li>
+          <li>Status</li>
+          <li>Carreiras</li>
+          <li>Recursos da marca</li>
+          <li>Publicidade</li>
+          <li>Marketing</li>
+          <li>Twitter para Empresas</li>
+          <li>Desenvolvedores</li>
+          <li>Diretório</li>
+          <li>Configurações</li>
+        </ul>
+      </nav>
+      <p>
+        © 2022 Twitter, Inc.
+      </p>
+    </footer>
   </div>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Central de acões</a></li>
-        <li><a href="">Termos de serviços</a></li>
-        <li><a href="">Política de privacidade</a></li>
-        <li><a href="">Acessibilidade</a></li>
-        <li><a href="">Informações de anúncios</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Status</a></li>
-        <li><a href="">Carreira</a></li>
-        <li><a href="">Recursos da marca</a></li>
-        <li><a href="">Publicidade</a></li>
-        <li><a href="">Marketing</a></li>
-        <li><a href="">Twitter para empresas</a></li>
-        <li><a href="">Desenvolvedores</a></li>
-        <li><a href="">Diretório</a></li>
-        <li><a href="">configurações</a></li>
-        <li><a href="">© 2022 Twitter, Inc.</a></li>
-      </ul>
-    </nav>
-  </footer>
 </body>
 </html>
