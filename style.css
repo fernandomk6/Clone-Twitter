@@ -2,10 +2,195 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
 ul {
   list-style: none;
+}
+
+/* variables */
+:root {
+  --black-color: #000000;
+  --main-text-color: #e7e9ea;
+}
+
+/* container */
+#container {
+  display: flex;
+}
+
+#banner {
+  position: relative;
+  flex: 1 1 59%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-container {
+  padding: 40px;
+  flex: 1 1 auto;
+  max-width: 360px;
+}
+
+.img-container svg,
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 41%;
+  min-width: 800px;
+}
+
+#main-container {
+  padding: 40px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#main-container header {
+  background-color: blue;
+}
+
+#main-container header svg {
+  width: 50px;
+  height: auto;
+}
+
+#main-container header h2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+#main-container header p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#main-container form {
+  background-color: aquamarine;
+  width: 350px;
+}
+
+.main-btn {
+  background-color: blanchedalmond;
+  border-radius: 30px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 60px;
+}
+
+.btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#perfil-icon {
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.line-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.account-info {
+  flex: 1 1 auto;
+}
+
+.account-email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: .8rem;
+}
+
+#google-login .account-email svg{
+  width: 10px;
+  height: auto;
+  margin: 0 10px;
+}
+
+#apple-login svg,
+#google-login svg {
+  width: 30px;
+  height: auto;
+}
+
+.separator-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.separator-container .separator-line {
+  flex: 1 1 auto;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.separator-container .separator-text {
+  position: relative;
+  top: 10px;
+  margin: 0 10px;
+}
+
+.extra-info {
+  font-size: .8rem;
+}
+
+#create-acc-container {
+  margin-top: 40px;
+}
+
+#create-acc-container .main-btn {
+  background-color: #000000;
+  border: 2px solid blue;
+  color: white;
+}
+
+@media(max-width: 1000px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #banner {
+    order: 1;
+  }
+
+  #main-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #main-content {
+    background-color: blue;
+    width: 100%;
+  }
+
+  main {
+    min-width: 0;
+  }
+  
 }
