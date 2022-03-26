@@ -1,3 +1,4 @@
+/* reset */
 *{
   font-family: 'roboto';
   font-size: 16px;
@@ -5,6 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
+
+/* container */
 
 #container{
   height: 100vh;
@@ -20,6 +28,8 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+
+/* banner */
 
 #banner{
   background-color: black;
@@ -148,6 +158,8 @@ header i{
   font-size: .8rem;
   color: darkgray;
 }
+
+/* footer */
 
 footer{
   padding: 10px;
